@@ -30,6 +30,7 @@ public class Reservation {
 	@ManyToOne
 	@JoinColumn(name="passager_id")
 	private Passager passager;
+	
 	 
 	public Reservation() {
 		super();
