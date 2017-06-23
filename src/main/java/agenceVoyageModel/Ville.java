@@ -16,9 +16,6 @@ public class Ville {
 	@Column(name="name")
 	private String nom;
 	
-	
-	
-	
 	public Ville() {
 		super();
 	}
@@ -27,7 +24,7 @@ public class Ville {
 		super();
 		this.nom = nom;
 	}
-
+ 
 	public String getNom() {
 		return nom;
 	}

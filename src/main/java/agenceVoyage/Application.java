@@ -28,7 +28,7 @@ public class Application {
 		if (instance == null) {
 			instance = new Application();
 		}
-
+ 
 		return instance;
 	}
 
@@ -47,8 +47,6 @@ public class Application {
 	public LoginDao getLoginDao() {
 		return loginDao;
 	}
-	
-	
 
 	
 }

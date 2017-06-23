@@ -9,7 +9,6 @@ import javax.persistence.Query;
 import agenceVoyage.Application;
 import agenceVoyageModel.Passager;
 
-
 public class PassagerDaoJpa implements PassagerDao{
 
 	@Override

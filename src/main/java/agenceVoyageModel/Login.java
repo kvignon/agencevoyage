@@ -23,16 +23,11 @@ public class Login {
 	@Column(name="password")
 	private String motDePasse;
 	@Column(name="admin")
-	private boolean admin;
-	
-	
-	
-	
+	private boolean admin;	
 	
 	public Login() {
 		super();
 	}
-
 
 	public Login(String login, String motDePasse, boolean admin) {
 		super();

@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -37,7 +36,7 @@ public class Passager {
 	@Column(name="adress")
 	private Adresse adr;
 
-	
+ 	
 	@Version
 	private int version;
 	

@@ -38,9 +38,8 @@ public class AgenceVoyageWithDao {
 		LoginDao loginDao = Application.getInstance().getLoginDao();
 		
 		Login login1 = new Login("farid2b", "Farid2B2A", true);
-		
+		  
 		loginDao.create(login1);
-		
 	}
 
 }

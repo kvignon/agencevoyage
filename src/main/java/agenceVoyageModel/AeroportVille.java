@@ -18,8 +18,7 @@ public class AeroportVille {
 	@GeneratedValue	private Long aeroport_id;
 	
 	@Version
-	private int version;
-	
+	private int version;	
 	@ManyToOne
 	@JoinColumn(name="aeroport_id")
 	private Aeroport aeroport;
@@ -37,8 +36,6 @@ public class AeroportVille {
 			this.aeroport = aeroport;
 			this.ville = ville;
 	}
-
-
 	
 public Aeroport getAeroport() {
 		return aeroport;

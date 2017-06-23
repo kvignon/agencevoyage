@@ -16,7 +16,7 @@ public class FormationDaoJpa implements FormationDao {
 	public List<CompagnieAerienne> findAll() {
 		List<CompagnieAerienne> list = null;
 		EntityManager em = null;
-		EntityTransaction tx = null;
+		EntityTransaction tx = null; 
 
 		try {
 			em = Application.getInstance().getEmf().createEntityManager();
