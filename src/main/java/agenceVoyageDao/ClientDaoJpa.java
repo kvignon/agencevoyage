@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import agenceVoyage.Application;
 import agenceVoyageModel.Vol;
 
-public class MatiereDaoJpa implements MatiereDao {
+public class ClientDaoJpa implements ClientDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
