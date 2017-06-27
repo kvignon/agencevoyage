@@ -23,7 +23,7 @@ public class Adresse {
 		this.pays=pays;
 	}
 
-	public String getAdresse() {
+	public String getAdresse() { 
 		return adresse;
 	}
 

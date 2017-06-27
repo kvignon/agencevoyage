@@ -24,7 +24,7 @@ public class Ville {
 		super();
 		this.nom = nom;
 	}
- 
+  
 	public String getNom() {
 		return nom;
 	}

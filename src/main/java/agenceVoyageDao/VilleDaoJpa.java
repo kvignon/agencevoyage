@@ -32,7 +32,7 @@ public class VilleDaoJpa implements VilleDao{
 			if (tx != null) {
 				tx.rollback();
 			}
-		} finally {
+		} finally { 
 			if (em != null) {
 				em.close();
 			}

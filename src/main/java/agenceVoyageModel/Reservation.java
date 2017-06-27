@@ -26,7 +26,7 @@ public class Reservation {
 	
 	@Version
 	private int version;
-	
+	 
 	@ManyToOne
 	@JoinColumn(name="passager_id")
 	private Passager passager;

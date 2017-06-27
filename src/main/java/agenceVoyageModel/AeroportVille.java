@@ -8,10 +8,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
-@Entity
+//@Entity
 @Table(name="AeroVille")
 public class AeroportVille {
-	
+	/*
 	@Id
 	@GeneratedValue	private Long aeroVille_id;
 	@Id
@@ -59,6 +59,6 @@ public Aeroport getAeroport() {
 
 	public void setAeroVille_id(Long aeroVille_id) {
 		this.aeroVille_id = aeroVille_id;
-	}
+	}*/
 	
 }

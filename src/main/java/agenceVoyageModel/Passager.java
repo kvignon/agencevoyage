@@ -36,7 +36,7 @@ public class Passager {
 	@Column(name="adress")
 	private Adresse adr;
 
- 	
+ 	 
 	@Version
 	private int version;
 	

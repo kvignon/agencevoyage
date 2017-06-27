@@ -27,7 +27,7 @@ public class Login {
 	
 	public Login() {
 		super();
-	}
+	} 
 
 	public Login(String login, String motDePasse, boolean admin) {
 		super();
