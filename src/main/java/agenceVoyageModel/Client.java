@@ -12,7 +12,10 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
-
+@Entity
+@Table(name="customer")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING, length = 15)
 public abstract class Client {
 	@Id
 	@GeneratedValue
