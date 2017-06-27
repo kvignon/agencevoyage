@@ -35,7 +35,7 @@ public class PassagerDaoJpa implements PassagerDao{
 		} finally {
 			if (em != null) {
 				em.close();
-			}
+			} 
 		}
 		return list;
 	}

@@ -12,7 +12,7 @@ import agenceVoyageModel.Passager;
 
 public class LoginDaoJpa implements LoginDao{
 	
-	@Override
+	@Override 
 	public List<Login> findAll() {
 
 		List<Login> list = null;

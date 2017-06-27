@@ -12,4 +12,4 @@ public interface Dao<T, PK> {
 	T update(T obj);
 
 	void delete(T obj);
-}
+}  

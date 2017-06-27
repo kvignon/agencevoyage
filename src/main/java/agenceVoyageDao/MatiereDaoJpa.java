@@ -27,7 +27,7 @@ public class MatiereDaoJpa implements MatiereDao {
 
 			tx.commit();
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 			if (tx != null) {
 				tx.rollback();
 			}

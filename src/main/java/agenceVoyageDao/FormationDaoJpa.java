@@ -30,7 +30,7 @@ public class FormationDaoJpa implements FormationDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 			if (tx != null) {
-				tx.rollback();
+				tx.rollback(); 
 			}
 		} finally {
 			if (em != null) {

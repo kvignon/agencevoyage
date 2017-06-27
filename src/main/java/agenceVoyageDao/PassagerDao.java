@@ -5,4 +5,4 @@ import agenceVoyageModel.Passager;
 public interface PassagerDao extends Dao<Passager, Long>{
 	
 
-}
+} 

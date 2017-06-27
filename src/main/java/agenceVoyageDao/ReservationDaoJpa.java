@@ -31,7 +31,7 @@ public class ReservationDaoJpa implements ReservationDao{
 			e.printStackTrace();
 			if (tx != null) {
 				tx.rollback();
-			}
+			} 
 		} finally {
 			if (em != null) {
 				em.close();
