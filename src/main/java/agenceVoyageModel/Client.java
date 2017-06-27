@@ -34,7 +34,7 @@ public abstract class Client {
 	public Client(String nom, String prenom) {
 		super();
 		this.nom = nom;
-		this.prenom = prenom;
+		this.prenom = prenom; 
 	}
 
 	public Long getId() {
