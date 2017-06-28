@@ -18,6 +18,7 @@ import agenceVoyageModel.Adresse;
 import agenceVoyageModel.Login;
 import agenceVoyageModel.Passager;
 import agenceVoyageModel.Reservation;
+import agenceVoyageModel.Ville;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -152,46 +153,42 @@ public class TestUnitAgenceVoyage {
 		@Test
 		public void testVille() throws ParseException {
 			
-/*SimpleDateFormat sdf =new SimpleDateFormat("dd/MM/yyyy");
-			
-			Formation formationAubay = new Formation("JAVA J2EE");
-			formationAubay.setDtDebut(sdf.parse("02/05/2017"));
-			formationAubay.setDtFin(sdf.parse("18/08/2017"));
-			
-			formationDao.create(formationAubay);
-			
-			Formation J2EEFind = formationDao.find(formationAubay.getId());
-			
-			Assert.assertEquals("JAVA J2EE", J2EEFind.getNom());
-			Assert.assertEquals("02/05/2017", sdf.format(formationAubay.getDtDebut()));
-			Assert.assertEquals("18/08/2017", sdf.format(formationAubay.getDtFin()));
-			
-			J2EEFind.setNom("J2EE Angular");
-			formationAubay.setDtDebut(sdf.parse("12/05/2017"));
-			formationAubay.setDtFin(sdf.parse("22/08/2017"));
-			
-			Formation formationAubayUpdate = formationDao.update(J2EEFind);
-			
-			J2EEFind = formationDao.find(formationAubayUpdate.getId());
-			
-			
-			Assert.assertEquals("J2EE Angular", J2EEFind.getNom());
-			Assert.assertEquals("12/05/2017", sdf.format(formationAubay.getDtDebut()));
-			Assert.assertEquals("22/08/2017", sdf.format(formationAubay.getDtFin()));
-			
-			
-			List<Formation> formation = formationDao.findAll();
-			
-			formationDao.delete(J2EEFind);
 
-			J2EEFind = formationDao.find(J2EEFind.getId());
 			
-			Assert.assertNull(J2EEFind);
+			Ville ville = new Ville("Paris");
 			
-			List<Formation> formationPostDelete = formationDao.findAll();
+			villeDao.create(ville);
 			
-			Assert.assertEquals(1, formation.size() - formationPostDelete.size());
-		}*/
+			Ville villeFind = villeDao.find(ville.getVille_id());
+			
+			Assert.assertEquals("Paris", villeFind.getNom());
+			
+			
+			villeFind.setNom("Marseille");
+			
+			
+			Ville villeUpdate = villeDao.update(villeFind);
+			
+			villeFind = villeDao.find(villeUpdate.getVille_id());
+			
+			
+			
+			Assert.assertEquals("Marseille", villeFind.getNom());
+			
+			
+			
+			List<Ville> Villes = villeDao.findAll();
+			
+			villeDao.delete(villeFind);
+
+			villeFind = villeDao.find(villeFind.getVille_id());
+			
+			Assert.assertNull(villeFind);
+			
+			List<Ville> villePostDelete = villeDao.findAll();
+			
+			Assert.assertEquals(1, Villes.size() - villePostDelete.size());
 		}
-	
 }
+	
+
